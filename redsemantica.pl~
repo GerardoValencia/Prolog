@@ -1,0 +1,28 @@
+puede(animal, respirar).
+es_un(ave, animal).
+es_un(mamifero, animal).
+vuela(ave, bien).
+tiene(ave, plumas).
+pone(ave, huevos).
+tiene(mamifero, pelo).
+de(mamifero, leche).
+es_un(avestruz, ave).
+es_un(albatros, ave).
+tiene_patas(avestruz, largas).
+vuela(avestruz, no_puede).
+vuela(albatros, muy_bien).
+tiene(ballena, piel).
+vive_en(ballena, mar).
+come(tigre, carne).
+
+
+
+
+
+
+
+
+
+
+
+
