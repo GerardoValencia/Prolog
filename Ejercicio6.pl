@@ -1,0 +1,230 @@
+% Base de Conocimientos.
+
+% Familia de Jerry.
+persona('Jerry', 'M').
+persona('Gerardo', 'M').
+persona('Veronica', 'F').
+persona('Alejandro', 'M').
+
+% Abuelos Paternos de Jerry.
+persona('Lucio', 'M').
+persona('Esther', 'F').
+
+% Abuelos Maternos de Jerry.
+persona('Julio', 'M').
+persona('Norma', 'F').
+
+% Familia Paterna de Jerry.
+persona('Antonio', 'M').
+persona('Vange', 'F').
+persona('Mariela', 'F').
+persona('Marla', 'F').
+persona('Antonio2', 'M').
+
+persona('Alejandro2', 'M').
+persona('Berenice', 'F').
+persona('Daniela', 'F').
+persona('Alejandra', 'F').
+
+persona('Fernando', 'M').
+persona('Alesandra', 'F').
+persona('Sofia', 'F').
+persona('Lucio2', 'M').
+persona('Leonardo', 'M').
+persona('Iktan', 'M').
+persona('Itzia', 'F').
+
+% Familia Materna de Jerry.
+persona('Jose', 'M').
+persona('Norma2', 'F').
+persona('Jose2', 'M').
+persona('Luis', 'M').
+persona('Aragui', 'F').
+
+persona('Alejandro3', 'M').
+persona('Alejandra2', 'F').
+persona('Alejandro4', 'M').
+persona('Alejandra3', 'F').
+persona('Emanuel', 'M').
+
+persona('Juan', 'M').
+persona('Maribel', 'F').
+persona('Santiago', 'M').
+persona('Ines', 'F').
+
+% Base de Conocimiento 2.
+padre_de('Gerardo', 'Jerry').
+padre_de('Gerardo', 'Alejandro').
+padre_de('Antonio', 'Mariela').
+padre_de('Antonio', 'Marla').
+padre_de('Antonio', 'Antonio2').
+padre_de('Alejandro2', 'Daniela').
+padre_de('Alejandro2', 'Alejandra').
+padre_de('Fernando', 'Iktan').
+padre_de('Fernando', 'Itzia').
+padre_de('Jose', 'Jose2').
+padre_de('Jose', 'Luis').
+padre_de('Jose', 'Aragui').
+padre_de('Alejandro3', 'Alejandra3').
+padre_de('Alejandro3', 'Alejandro4').
+padre_de('Alejandro3', 'Emanuel').
+padre_de('Juan', 'Santiago').
+padre_de('Juan', 'Ines').
+
+madre_de('Veronica', 'Jerry').
+madre_de('Veronica', 'Alejandro').
+madre_de('Vange', 'Mariela').
+madre_de('Vange', 'Marla').
+madre_de('Vange', 'Antonio2').
+madre_de('Berenice', 'Daniela').
+madre_de('Berenice', 'Alejandra').
+madre_de('Alesandra', 'Iktan').
+madre_de('Alesandra', 'Itzia').
+madre_de('Norma2', 'Jose2').
+madre_de('Norma2', 'Luis').
+madre_de('Norma2', 'Aragui').
+madre_de('Alejandra2', 'Alejandra3').
+madre_de('Alejandra2', 'Alejandro4').
+madre_de('Alejandra2', 'Emanuel').
+madre_de('Maribel', 'Santiago').
+madre_de('Maribel', 'Ines').
+
+
+esposo_de('Gerardo', 'Veronica').
+esposo_de('Antonio', 'Vange').
+esposo_de('Alejandro2', 'Berenice').
+esposo_de('Fernando', 'Alesandra').
+esposo_de('Jose', 'Norma2').
+esposo_de('Alejandro3', 'Alejandra2').
+esposo_de('Juan', 'Maribel').
+
+esposa_de('Veronica', 'Gerardo').
+esposa_de('Vange', 'Antonio').
+esposa_de('Berenice', 'Alejandro2').
+esposa_de('Alesandra', 'Fernando').
+esposa_de('Norma2', 'Jose').
+esposa_de('Alejandra2', 'Alejandro3').
+esposa_de('Maribel', 'Juan').
+
+hijo_de('Jerry', 'Gerardo').
+hijo_de('Jerry', 'Veronica').
+hijo_de('Alejandro', 'Gerardo').
+hijo_de('Alejandro', 'Veronica').
+hijo_de('Antonio2', 'Antonio').
+hijo_de('Antonio2', 'Vange').
+hijo_de('Iktan', 'Fernando').
+hijo_de('Iktan', 'Alesandra').
+hijo_de('Jose2', 'Jose').
+hijo_de('Jose2', 'Norma2').
+hijo_de('Luis', 'Jose').
+hijo_de('Luis', 'Norma2').
+hijo_de('Alejandro4', 'Alejandro3').
+hijo_de('Alejandro4', 'Alejandra2').
+hijo_de('Emanuel', 'Alejandro3').
+hijo_de('Emanuel', 'Alejandra2').
+hijo_de('Santiago', 'Juan').
+hijo_de('Santiago', 'Maribel').
+
+hija_de('Mariela', 'Antonio').
+hija_de('Mariela', 'Vange').
+hija_de('Marla', 'Antonio').
+hija_de('Marla', 'Vange').
+hija_de('Daniela', 'Alejandro2').
+hija_de('Daniela', 'Berenice').
+hija_de('Alejandra', 'Alejandro2').
+hija_de('Alejandra', 'Berenice').
+hija_de('Itzia', 'Fernando').
+hija_de('Itzia', 'Alesandra').
+hija_de('Aragui', 'Jose').
+hija_de('Aragui', 'Norma2').
+hija_de('Alejandra3', 'Alejandro3').
+hija_de('Alejandra3', 'Alejandra2').
+hija_de('Ines', 'Juan').
+hija_de('Ines', 'Maribel').
+
+hermano_de('Alejandro', 'Jerry').
+hermano_de('Jerry', 'Alejandro').
+hermano_de('Antonio', 'Gerardo').
+hermano_de('Alejandro2', 'Gerardo').
+hermano_de('Fernando', 'Gerardo').
+hermano_de('Alejandro3', 'Veronica').
+
+abuelo_de('Lucio', 'Jerry').
+abuelo_de('Julio', 'Jerry').
+
+abuela_de('Esther', 'Jerry').
+abuela_de('Norma', 'Jerry').
+
+nieto_de('Jerry', 'Lucio').
+nieto_de('Jerry', 'Esther').
+nieto_de('Jerry', 'Julio').
+nieto_de('Jerry', 'Norma').
+
+hermana_de('Norma2', 'Veronica').
+hermana_de('Maribel', 'Veronica').
+
+tio_de('Antonio', 'Jerry').
+tio_de('Alejandro2', 'Jerry').
+tio_de('Fernando', 'Jerry').
+tio_de('Jose', 'Jerry').
+tio_de('Alejandro3', 'Jerry').
+tio_de('Juan', 'Jerry').
+
+tia_de('Vange', 'Jerry').
+tia_de('Berenice', 'Jerry').
+tia_de('Alesandra', 'Jerry').
+tia_de('Norma2', 'Jerry').
+tia_de('Alejandra2', 'Jerry').
+tia_de('Maribel', 'Jerry').
+
+primo_de('Mariela', 'Jerry').
+primo_de('Marla', 'Jerry').
+primo_de('Antonio2', 'Jerry').
+primo_de('Daniela', 'Jerry').
+primo_de('Alejandra', 'Jerry').
+primo_de('Sofia', 'Jerry').
+primo_de('Lucio2', 'Jerry').
+primo_de('Leonardo', 'Jerry').
+primo_de('Iktan', 'Jerry').
+primo_de('Itzia', 'Jerry').
+primo_de('Jose2', 'Jerry').
+primo_de('Luis', 'Jerry').
+primo_de('Aragui', 'Jerry').
+primo_de('Alejandro4', 'Jerry').
+primo_de('Alejandra3', 'Jerry').
+primo_de('Emanuel', 'Jerry').
+primo_de('Santiago', 'Jerry').
+primo_de('Ines', 'Jerry').
+
+son_hermanos(A,C) :- padre_de(B,A), padre_de(B,C).
+
+son_suegros(A,C) :- padre_de(A,B), esposo_de(C,B).
+son_suegroM(A,C) :- padre_de(A,B), esposa_de(C,B).
+
+son_suegras(A,C) :- madre_de(A,B), esposo_de(C,B).
+son_suegraM(A,C) :- madre_de(A,B), esposa_de(C,B).
+
+
+son_yerno(A,C) :- madre_de(C,B), esposo_de(A,B).
+son_nuera(A,C) :- madre_de(C,B), esposa_de(A,B).
+
+son_yernopadre(A,C) :- padre_de(C,B), esposo_de(A,B).
+son_nuerapadre(A,C) :- padre_de(C,B), esposa_de(A,B).
+
+
+cunado(A,C) :- esposo_de(C,B) , hermano_de(B,A).
+cunadoM(A,C) :- esposo_de(C,B) , hermana_de(B,A).
+
+cunada(A,C) :- esposa_de(C,B) , hermano_de(B,A).
+cunadaM(A,C) :- esposa_de(C,B) , hermana_de(B,A).
+
+nietos_de(C,A) :- padre_de(A,B), padre_de(B,C).
+nietos_deM(C,A) :- padre_de(A,B), madre_de(B,C).
+nietos_dem2(C,A) :- madre_de(A,B), madre_de(B,C).
+nietos_dem3(C,A) :- madre_de(A,B), padre_de(B,C).
+
+
+
+
+
+
